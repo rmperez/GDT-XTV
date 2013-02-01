@@ -94,7 +94,7 @@ while menu != "5":
 	for item in results:
 		#print item.tag, item.attrib
 		
-		f.write("node [shape=\"box\"]\n\n")
+		f.write("node [shape=\""+elementShape+"box\"]\n\n")
 
 		f.write(item.tag+str(x)+" [label=\""+(item.tag).upper()+"\\n"+str(item.attrib)+"\"]\n")
 		f.write(parent+" -> {"+item.tag+str(x)+"}\n\n")
@@ -102,13 +102,13 @@ while menu != "5":
 			if item2.tag == choice:
 				print(item2.text)
 			#parent is item
-			f.write("node [shape=\"box\"]\n\n")
+			f.write("node [shape=\""+elementShape+"\"]\n\n")
 		
 			#create new node for element
 			f.write(item2.tag+str(y)+" [label=\""+(item2.tag).upper()+"\"]\n")
 
 			#oval shape for element's contents
-			f.write("node [shape=\"oval\"]\n")
+			f.write("node [shape=\""+leafShape+"\"]\n")
 
 			#create new node for element's contents
 			f.write(item2.tag+str(y)+"x [label=\""+item2.text+"\"]\n")
