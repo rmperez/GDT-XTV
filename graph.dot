@@ -1,0 +1,317 @@
+digraph {
+rankdir=LR
+dblp0 [label="DBLP"]
+node [shape="box"]
+
+article1 [label="ARTICLE\n{'mdate': '2002-01-03', 'key': 'persons/Codd71a'}"]
+dblp0 -> {article1}
+
+node [shape="box"]
+
+author0 [label="AUTHOR"]
+node [shape="oval"]
+author0x [label="E. F. Codd"]
+author0 -> author0x
+article1 -> {author0}
+
+node [shape="box"]
+
+title1 [label="TITLE"]
+node [shape="oval"]
+title1x [label="Further Normalization of the Data Base Relational Model."]
+title1 -> title1x
+article1 -> {title1}
+
+node [shape="box"]
+
+journal2 [label="JOURNAL"]
+node [shape="oval"]
+journal2x [label="IBM Research Report, San Jose, California"]
+journal2 -> journal2x
+article1 -> {journal2}
+
+node [shape="box"]
+
+volume3 [label="VOLUME"]
+node [shape="oval"]
+volume3x [label="RJ909"]
+volume3 -> volume3x
+article1 -> {volume3}
+
+node [shape="box"]
+
+month4 [label="MONTH"]
+node [shape="oval"]
+month4x [label="August"]
+month4 -> month4x
+article1 -> {month4}
+
+node [shape="box"]
+
+year5 [label="YEAR"]
+node [shape="oval"]
+year5x [label="1971"]
+year5 -> year5x
+article1 -> {year5}
+
+node [shape="box"]
+
+cdrom6 [label="CDROM"]
+node [shape="oval"]
+cdrom6x [label="ibmTR/rj909.pdf"]
+cdrom6 -> cdrom6x
+article1 -> {cdrom6}
+
+node [shape="box"]
+
+ee7 [label="EE"]
+node [shape="oval"]
+ee7x [label="db/labs/ibm/RJ909.html"]
+ee7 -> ee7x
+article1 -> {ee7}
+
+node [shape="box"]
+
+article2 [label="ARTICLE\n{'mdate': '2002-01-03', 'key': 'persons/CoddD74'}"]
+dblp0 -> {article2}
+
+node [shape="box"]
+
+author8 [label="AUTHOR"]
+node [shape="oval"]
+author8x [label="E. F. Codd"]
+author8 -> author8x
+article2 -> {author8}
+
+node [shape="box"]
+
+author9 [label="AUTHOR"]
+node [shape="oval"]
+author9x [label="C. J. Date"]
+author9 -> author9x
+article2 -> {author9}
+
+node [shape="box"]
+
+title10 [label="TITLE"]
+node [shape="oval"]
+title10x [label="Interactive Support for Non-Programmers: The Relational and Network Approaches."]
+title10 -> title10x
+article2 -> {title10}
+
+node [shape="box"]
+
+journal11 [label="JOURNAL"]
+node [shape="oval"]
+journal11x [label="IBM Research Report, San Jose, California"]
+journal11 -> journal11x
+article2 -> {journal11}
+
+node [shape="box"]
+
+volume12 [label="VOLUME"]
+node [shape="oval"]
+volume12x [label="RJ1400"]
+volume12 -> volume12x
+article2 -> {volume12}
+
+node [shape="box"]
+
+month13 [label="MONTH"]
+node [shape="oval"]
+month13x [label="June"]
+month13 -> month13x
+article2 -> {month13}
+
+node [shape="box"]
+
+year14 [label="YEAR"]
+node [shape="oval"]
+year14x [label="1974"]
+year14 -> year14x
+article2 -> {year14}
+
+node [shape="box"]
+
+article3 [label="ARTICLE\n{'mdate': '2002-01-03', 'key': 'persons/Codd71'}"]
+dblp0 -> {article3}
+
+node [shape="box"]
+
+author15 [label="AUTHOR"]
+node [shape="oval"]
+author15x [label="E. F. Codd"]
+author15 -> author15x
+article3 -> {author15}
+
+node [shape="box"]
+
+title16 [label="TITLE"]
+node [shape="oval"]
+title16x [label="Data Base Sublanguage Founded on the Relational Calculus."]
+title16 -> title16x
+article3 -> {title16}
+
+node [shape="box"]
+
+journal17 [label="JOURNAL"]
+node [shape="oval"]
+journal17x [label="IBM Research Report, San Jose, California"]
+journal17 -> journal17x
+article3 -> {journal17}
+
+node [shape="box"]
+
+month18 [label="MONTH"]
+node [shape="oval"]
+month18x [label="July"]
+month18 -> month18x
+article3 -> {month18}
+
+node [shape="box"]
+
+volume19 [label="VOLUME"]
+node [shape="oval"]
+volume19x [label="RJ893"]
+volume19 -> volume19x
+article3 -> {volume19}
+
+node [shape="box"]
+
+year20 [label="YEAR"]
+node [shape="oval"]
+year20x [label="1971"]
+year20 -> year20x
+article3 -> {year20}
+
+node [shape="box"]
+
+article4 [label="ARTICLE\n{'mdate': '2002-01-03', 'key': 'persons/Codd72'}"]
+dblp0 -> {article4}
+
+node [shape="box"]
+
+author21 [label="AUTHOR"]
+node [shape="oval"]
+author21x [label="E. F. Codd"]
+author21 -> author21x
+article4 -> {author21}
+
+node [shape="box"]
+
+title22 [label="TITLE"]
+node [shape="oval"]
+title22x [label="Relational Completeness of Data Base Sublanguages."]
+title22 -> title22x
+article4 -> {title22}
+
+node [shape="box"]
+
+journal23 [label="JOURNAL"]
+node [shape="oval"]
+journal23x [label="In: R. Rustin (ed.): Database Systems: 65-98, Prentice Hall and IBM Research Report RJ 987, San Jose, California"]
+journal23 -> journal23x
+article4 -> {journal23}
+
+node [shape="box"]
+
+month24 [label="MONTH"]
+node [shape="oval"]
+month24x [label="March"]
+month24 -> month24x
+article4 -> {month24}
+
+node [shape="box"]
+
+year25 [label="YEAR"]
+node [shape="oval"]
+year25x [label="1972"]
+year25 -> year25x
+article4 -> {year25}
+
+node [shape="box"]
+
+cdrom26 [label="CDROM"]
+node [shape="oval"]
+cdrom26x [label="ibmTR/rj987.pdf"]
+cdrom26 -> cdrom26x
+article4 -> {cdrom26}
+
+node [shape="box"]
+
+ee27 [label="EE"]
+node [shape="oval"]
+ee27x [label="db/labs/ibm/RJ987.html"]
+ee27 -> ee27x
+article4 -> {ee27}
+
+node [shape="box"]
+
+article5 [label="ARTICLE\n{'mdate': '2002-01-03', 'key': 'persons/Codd69'}"]
+dblp0 -> {article5}
+
+node [shape="box"]
+
+author28 [label="AUTHOR"]
+node [shape="oval"]
+author28x [label="E. F. Codd"]
+author28 -> author28x
+article5 -> {author28}
+
+node [shape="box"]
+
+title29 [label="TITLE"]
+node [shape="oval"]
+title29x [label="Derivability, Redundancy and Consistency of Relations Stored in Large Data Banks."]
+title29 -> title29x
+article5 -> {title29}
+
+node [shape="box"]
+
+journal30 [label="JOURNAL"]
+node [shape="oval"]
+journal30x [label="IBM Research Report, San Jose, California"]
+journal30 -> journal30x
+article5 -> {journal30}
+
+node [shape="box"]
+
+volume31 [label="VOLUME"]
+node [shape="oval"]
+volume31x [label="RJ599"]
+volume31 -> volume31x
+article5 -> {volume31}
+
+node [shape="box"]
+
+month32 [label="MONTH"]
+node [shape="oval"]
+month32x [label="August"]
+month32 -> month32x
+article5 -> {month32}
+
+node [shape="box"]
+
+year33 [label="YEAR"]
+node [shape="oval"]
+year33x [label="1969"]
+year33 -> year33x
+article5 -> {year33}
+
+node [shape="box"]
+
+cdrom34 [label="CDROM"]
+node [shape="oval"]
+cdrom34x [label="ibmTR/rj599.pdf"]
+cdrom34 -> cdrom34x
+article5 -> {cdrom34}
+
+node [shape="box"]
+
+ee35 [label="EE"]
+node [shape="oval"]
+ee35x [label="db/labs/ibm/RJ599.html"]
+ee35 -> ee35x
+article5 -> {ee35}
+
+}
