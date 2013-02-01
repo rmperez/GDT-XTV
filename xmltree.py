@@ -11,7 +11,8 @@ dblp = tree.getroot()
 #styelsheet variables
 elementShape = "box"
 leafShape = "oval"
-
+direction = "LR"
+#add some color choices
 
 menu = "0"
 print("\nWelcome to XML Tree Visualization")
