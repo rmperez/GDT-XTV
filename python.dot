@@ -1,0 +1,483 @@
+digraph {
+rankdir=LR
+node [shape="box"]
+
+dblp0 [label="DBLP"]
+article1 [label="ARTICLE\nmdate: 2002-01-03
+key: persons/Codd71a
+"]
+dblp0 -> {article1}
+
+author0 [label="AUTHOR"]
+node [shape="oval"]
+author0x [label="E. F. Codd"]
+author0 -> author0x
+article1 -> {author0}
+
+node [shape="box"]
+title1 [label="TITLE"]
+node [shape="oval"]
+title1x [label="Further Normalization of the Data Base Relational Model."]
+title1 -> title1x
+article1 -> {title1}
+
+node [shape="box"]
+journal2 [label="JOURNAL"]
+node [shape="oval"]
+journal2x [label="IBM Research Report, San Jose, California"]
+journal2 -> journal2x
+article1 -> {journal2}
+
+node [shape="box"]
+volume3 [label="VOLUME"]
+node [shape="oval"]
+volume3x [label="RJ909"]
+volume3 -> volume3x
+article1 -> {volume3}
+
+node [shape="box"]
+month4 [label="MONTH"]
+node [shape="oval"]
+month4x [label="August"]
+month4 -> month4x
+article1 -> {month4}
+
+node [shape="box"]
+year5 [label="YEAR"]
+node [shape="oval"]
+year5x [label="1971"]
+year5 -> year5x
+article1 -> {year5}
+
+node [shape="box"]
+cdrom6 [label="CDROM"]
+node [shape="oval"]
+cdrom6x [label="ibmTR/rj909.pdf"]
+cdrom6 -> cdrom6x
+article1 -> {cdrom6}
+
+node [shape="box"]
+ee7 [label="EE"]
+node [shape="oval"]
+ee7x [label="db/labs/ibm/RJ909.html"]
+ee7 -> ee7x
+article1 -> {ee7}
+
+node [shape="box"]
+article2 [label="ARTICLE\nmdate: 2002-01-03
+key: persons/Hall74
+"]
+dblp0 -> {article2}
+
+author8 [label="AUTHOR"]
+node [shape="oval"]
+author8x [label="Patrick A. V. Hall"]
+author8 -> author8x
+article2 -> {author8}
+
+node [shape="box"]
+title9 [label="TITLE"]
+node [shape="oval"]
+title9x [label="Common Subexpression Identification in General Algebraic Systems."]
+title9 -> title9x
+article2 -> {title9}
+
+node [shape="box"]
+journal10 [label="JOURNAL"]
+node [shape="oval"]
+journal10x [label="Technical Rep. UKSC 0060, IBM United Kingdom Scientific Centre"]
+journal10 -> journal10x
+article2 -> {journal10}
+
+node [shape="box"]
+month11 [label="MONTH"]
+node [shape="oval"]
+month11x [label="November"]
+month11 -> month11x
+article2 -> {month11}
+
+node [shape="box"]
+year12 [label="YEAR"]
+node [shape="oval"]
+year12x [label="1974"]
+year12 -> year12x
+article2 -> {year12}
+
+node [shape="box"]
+article3 [label="ARTICLE\nmdate: 2002-01-03
+key: persons/Tresch96
+"]
+dblp0 -> {article3}
+
+author13 [label="AUTHOR"]
+node [shape="oval"]
+author13x [label="Markus Tresch"]
+author13 -> author13x
+article3 -> {author13}
+
+node [shape="box"]
+title14 [label="TITLE"]
+node [shape="oval"]
+title14x [label="Principles of Distributed Object Database Languages."]
+title14 -> title14x
+article3 -> {title14}
+
+node [shape="box"]
+journal15 [label="JOURNAL"]
+node [shape="oval"]
+journal15x [label="technical Report 248, ETH Zrich, Dept. of Computer Science"]
+journal15 -> journal15x
+article3 -> {journal15}
+
+node [shape="box"]
+month16 [label="MONTH"]
+node [shape="oval"]
+month16x [label="July"]
+month16 -> month16x
+article3 -> {month16}
+
+node [shape="box"]
+year17 [label="YEAR"]
+node [shape="oval"]
+year17x [label="1996"]
+year17 -> year17x
+article3 -> {year17}
+
+node [shape="box"]
+article4 [label="ARTICLE\nmdate: 2002-01-03
+key: persons/CoddD74
+"]
+dblp0 -> {article4}
+
+author18 [label="AUTHOR"]
+node [shape="oval"]
+author18x [label="E. F. Codd"]
+author18 -> author18x
+article4 -> {author18}
+
+node [shape="box"]
+author19 [label="AUTHOR"]
+node [shape="oval"]
+author19x [label="C. J. Date"]
+author19 -> author19x
+article4 -> {author19}
+
+node [shape="box"]
+title20 [label="TITLE"]
+node [shape="oval"]
+title20x [label="Interactive Support for Non-Programmers: The Relational and Network Approaches."]
+title20 -> title20x
+article4 -> {title20}
+
+node [shape="box"]
+journal21 [label="JOURNAL"]
+node [shape="oval"]
+journal21x [label="IBM Research Report, San Jose, California"]
+journal21 -> journal21x
+article4 -> {journal21}
+
+node [shape="box"]
+volume22 [label="VOLUME"]
+node [shape="oval"]
+volume22x [label="RJ1400"]
+volume22 -> volume22x
+article4 -> {volume22}
+
+node [shape="box"]
+month23 [label="MONTH"]
+node [shape="oval"]
+month23x [label="June"]
+month23 -> month23x
+article4 -> {month23}
+
+node [shape="box"]
+year24 [label="YEAR"]
+node [shape="oval"]
+year24x [label="1974"]
+year24 -> year24x
+article4 -> {year24}
+
+node [shape="box"]
+www5 [label="WWW\nmdate: 2005-10-06
+key: persons/Ley2003
+"]
+dblp0 -> {www5}
+
+author25 [label="AUTHOR"]
+node [shape="oval"]
+author25x [label="Michael Ley"]
+author25 -> author25x
+www5 -> {author25}
+
+node [shape="box"]
+title26 [label="TITLE"]
+node [shape="oval"]
+title26x [label="ACM SIGMOD Contribution Award 2003 Acceptance Speech"]
+title26 -> title26x
+www5 -> {title26}
+
+node [shape="box"]
+year27 [label="YEAR"]
+node [shape="oval"]
+year27x [label="2003"]
+year27 -> year27x
+www5 -> {year27}
+
+node [shape="box"]
+url28 [label="URL"]
+node [shape="oval"]
+url28x [label="http://www.informatik.uni-trier.de/~ley/db/about/contributionaward03.html"]
+url28 -> url28x
+www5 -> {url28}
+
+node [shape="box"]
+inproceedings6 [label="INPROCEEDINGS\nmdate: 2002-01-03
+key: persons/JohnLM94
+"]
+dblp0 -> {inproceedings6}
+
+author29 [label="AUTHOR"]
+node [shape="oval"]
+author29x [label="Werner John"]
+author29 -> author29x
+inproceedings6 -> {author29}
+
+node [shape="box"]
+author30 [label="AUTHOR"]
+node [shape="oval"]
+author30x [label="Dominik Ley"]
+author30 -> author30x
+inproceedings6 -> {author30}
+
+node [shape="box"]
+author31 [label="AUTHOR"]
+node [shape="oval"]
+author31x [label="Joachim Miller"]
+author31 -> author31x
+inproceedings6 -> {author31}
+
+node [shape="box"]
+title32 [label="TITLE"]
+node [shape="oval"]
+title32x [label="ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards"]
+title32 -> title32x
+inproceedings6 -> {title32}
+
+node [shape="box"]
+pages33 [label="PAGES"]
+node [shape="oval"]
+pages33x [label="40-43"]
+pages33 -> pages33x
+inproceedings6 -> {pages33}
+
+node [shape="box"]
+year34 [label="YEAR"]
+node [shape="oval"]
+year34x [label="1994"]
+year34 -> year34x
+inproceedings6 -> {year34}
+
+node [shape="box"]
+booktitle35 [label="BOOKTITLE"]
+node [shape="oval"]
+booktitle35x [label="Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)"]
+booktitle35 -> booktitle35x
+inproceedings6 -> {booktitle35}
+
+node [shape="box"]
+article7 [label="ARTICLE\nmdate: 2002-01-03
+key: persons/Codd71
+"]
+dblp0 -> {article7}
+
+author36 [label="AUTHOR"]
+node [shape="oval"]
+author36x [label="E. F. Codd"]
+author36 -> author36x
+article7 -> {author36}
+
+node [shape="box"]
+title37 [label="TITLE"]
+node [shape="oval"]
+title37x [label="Data Base Sublanguage Founded on the Relational Calculus."]
+title37 -> title37x
+article7 -> {title37}
+
+node [shape="box"]
+journal38 [label="JOURNAL"]
+node [shape="oval"]
+journal38x [label="IBM Research Report, San Jose, California"]
+journal38 -> journal38x
+article7 -> {journal38}
+
+node [shape="box"]
+month39 [label="MONTH"]
+node [shape="oval"]
+month39x [label="July"]
+month39 -> month39x
+article7 -> {month39}
+
+node [shape="box"]
+volume40 [label="VOLUME"]
+node [shape="oval"]
+volume40x [label="RJ893"]
+volume40 -> volume40x
+article7 -> {volume40}
+
+node [shape="box"]
+year41 [label="YEAR"]
+node [shape="oval"]
+year41x [label="1971"]
+year41 -> year41x
+article7 -> {year41}
+
+node [shape="box"]
+article8 [label="ARTICLE\nmdate: 2002-01-03
+key: persons/Codd72
+"]
+dblp0 -> {article8}
+
+author42 [label="AUTHOR"]
+node [shape="oval"]
+author42x [label="E. F. Codd"]
+author42 -> author42x
+article8 -> {author42}
+
+node [shape="box"]
+title43 [label="TITLE"]
+node [shape="oval"]
+title43x [label="Relational Completeness of Data Base Sublanguages."]
+title43 -> title43x
+article8 -> {title43}
+
+node [shape="box"]
+journal44 [label="JOURNAL"]
+node [shape="oval"]
+journal44x [label="In: R. Rustin (ed.): Database Systems: 65-98, Prentice Hall and IBM Research Report RJ 987, San Jose, California"]
+journal44 -> journal44x
+article8 -> {journal44}
+
+node [shape="box"]
+month45 [label="MONTH"]
+node [shape="oval"]
+month45x [label="March"]
+month45 -> month45x
+article8 -> {month45}
+
+node [shape="box"]
+year46 [label="YEAR"]
+node [shape="oval"]
+year46x [label="1972"]
+year46 -> year46x
+article8 -> {year46}
+
+node [shape="box"]
+cdrom47 [label="CDROM"]
+node [shape="oval"]
+cdrom47x [label="ibmTR/rj987.pdf"]
+cdrom47 -> cdrom47x
+article8 -> {cdrom47}
+
+node [shape="box"]
+ee48 [label="EE"]
+node [shape="oval"]
+ee48x [label="db/labs/ibm/RJ987.html"]
+ee48 -> ee48x
+article8 -> {ee48}
+
+node [shape="box"]
+article9 [label="ARTICLE\nmdate: 2002-01-03
+key: persons/Codd69
+"]
+dblp0 -> {article9}
+
+author49 [label="AUTHOR"]
+node [shape="oval"]
+author49x [label="E. F. Codd"]
+author49 -> author49x
+article9 -> {author49}
+
+node [shape="box"]
+title50 [label="TITLE"]
+node [shape="oval"]
+title50x [label="Derivability, Redundancy and Consistency of Relations Stored in Large Data Banks."]
+title50 -> title50x
+article9 -> {title50}
+
+node [shape="box"]
+journal51 [label="JOURNAL"]
+node [shape="oval"]
+journal51x [label="IBM Research Report, San Jose, California"]
+journal51 -> journal51x
+article9 -> {journal51}
+
+node [shape="box"]
+volume52 [label="VOLUME"]
+node [shape="oval"]
+volume52x [label="RJ599"]
+volume52 -> volume52x
+article9 -> {volume52}
+
+node [shape="box"]
+month53 [label="MONTH"]
+node [shape="oval"]
+month53x [label="August"]
+month53 -> month53x
+article9 -> {month53}
+
+node [shape="box"]
+year54 [label="YEAR"]
+node [shape="oval"]
+year54x [label="1969"]
+year54 -> year54x
+article9 -> {year54}
+
+node [shape="box"]
+cdrom55 [label="CDROM"]
+node [shape="oval"]
+cdrom55x [label="ibmTR/rj599.pdf"]
+cdrom55 -> cdrom55x
+article9 -> {cdrom55}
+
+node [shape="box"]
+ee56 [label="EE"]
+node [shape="oval"]
+ee56x [label="db/labs/ibm/RJ599.html"]
+ee56 -> ee56x
+article9 -> {ee56}
+
+node [shape="box"]
+www10 [label="WWW\nmdate: 2005-10-06
+key: persons/Ley93
+"]
+dblp0 -> {www10}
+
+author57 [label="AUTHOR"]
+node [shape="oval"]
+author57x [label="Michael Ley"]
+author57 -> author57x
+www10 -> {author57}
+
+node [shape="box"]
+title58 [label="TITLE"]
+node [shape="oval"]
+title58x [label="DBLP.uni-trier.de: Computer Science Bibliography"]
+title58 -> title58x
+www10 -> {title58}
+
+node [shape="box"]
+url59 [label="URL"]
+node [shape="oval"]
+url59x [label="http://dblp.uni-trier.de/"]
+url59 -> url59x
+www10 -> {url59}
+
+node [shape="box"]
+year60 [label="YEAR"]
+node [shape="oval"]
+year60x [label="1993"]
+year60 -> year60x
+www10 -> {year60}
+
+node [shape="box"]
+}

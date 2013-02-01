@@ -21,8 +21,12 @@ for item in dblp:
     #print item.tag, item.attrib, item.text
     
     #elementx [label="ELEMENT \n attributes"]
-    print item.tag+str(x)+" [label=\""+(item.tag).upper()+"\\n"+str(item.attrib)+"\"]"
-    
+    #print item.tag+str(x)+" [label=\""+(item.tag).upper()+"\\n"+str(item.attrib)+"\"]"
+    labelOut = " [label=\""+(item.tag).upper()+"\\n"
+    for key in item.attrib:
+    	labelOut += key + ": " + item.attrib[key] + "\n"
+    print item.tag+str(x) + labelOut + "\"]"
+    	
     #dblp0 -> {elementx}
     print parent+" -> {"+item.tag+str(x)+"}\n"
     for item2 in item:
