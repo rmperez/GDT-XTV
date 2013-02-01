@@ -16,7 +16,9 @@ direction = "LR"
 
 style = open(stylesheet,'r')
 trash = style.readline()
+trash = style.readline()
 elementShape = style.readline()
+trash = style.readline()
 leafShape = style.readline()
 
 menu = "0"
