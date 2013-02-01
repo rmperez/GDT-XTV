@@ -20,6 +20,8 @@ trash = style.readline()
 elementShape = style.readline()
 trash = style.readline()
 leafShape = style.readline()
+trash = style.readline()
+direction = style.readline()
 
 menu = "0"
 print("\nWelcome to XML Tree Visualization")
@@ -83,7 +85,7 @@ while menu != "5":
 	f.write("digraph {\n")
 
 	#GRAPH DIRECTION
-	f.write("rankdir=LR\n")
+	f.write("rankdir="+direction+"LR\n")
 
 
 	#f.write("node [shape=\"box\"]\n\n")
