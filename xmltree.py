@@ -14,6 +14,11 @@ leafShape = "oval"
 direction = "LR"
 #add some color choices
 
+style = open(stylesheet,'r')
+trash = style.readline()
+elementShape = style.readline()
+leafShape = style.readline()
+
 menu = "0"
 print("\nWelcome to XML Tree Visualization")
 while menu != "5":  
