@@ -3,3 +3,5 @@
 box
 #Shape of nodes that contain data
 oval
+#Direction of Graph (LR,TB,BT,RL)
+LR
