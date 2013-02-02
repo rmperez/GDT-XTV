@@ -3,21 +3,16 @@
 #reads in dblpmini.xml and outputs graph.dot
 import os
 import xml.etree.ElementTree as ET
-file = "dblpmini.xml"
-stylesheet = "stylesheet.txt"
-tree = ET.parse(file)
-dblp = tree.getroot()
-
-#styelsheet variables
-elementShape = "box" #stuff inside <>
-leafShape = "oval" #stuff in between <> </>
-direction = "LR"
-#add some color choices
 
 cross = 0
-
 menu = "0"
 print("\nWelcome to XML Tree Visualization")
+
+file = raw_input("please enter a file name : ")
+tree = ET.parse(file)
+dblp = tree.getroot()
+stylesheet = "stylesheet.txt"
+
 while menu != "6":  
 	print("Here are the options for vizualization of dblp")
 	print("1. Vizualize entire file")
