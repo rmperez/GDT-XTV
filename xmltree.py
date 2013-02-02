@@ -14,23 +14,7 @@ leafShape = "oval" #stuff in between <> </>
 direction = "LR"
 #add some color choices
 
-style = open(stylesheet,'r')
-trash = style.readline()
-trash = style.readline()
 
-elementShape = style.readline()
-elementShape = elementShape[:-1]
-trash = style.readline()
-
-leafShape = style.readline()
-leafShape = leafShape[:-1]
-trash = style.readline()
-
-direction = style.readline()
-direction = direction[:-1]
-
-#elementShape = "box"
-#leafShape="oval"
 
 menu = "0"
 print("\nWelcome to XML Tree Visualization")
@@ -67,8 +51,25 @@ while menu != "5":
 		query = "./*"
 	print("Finding entries for " + choice + " " + find + "..." )
 
+	style = open(stylesheet,'r')
+	trash = style.readline()
+	trash = style.readline()
+	
+	elementShape = style.readline()
+	elementShape = elementShape[:-1]
+	trash = style.readline()
+
+	leafShape = style.readline()
+	leafShape = leafShape[:-1]
+	trash = style.readline()
+
+	direction = style.readline()
+	direction = direction[:-1]
+	style.close()
 	#open file where we will write out vizualization instructions for graphviz 
 	f = open('graph.dot','w')  
+	
+	
 
 
 #findall performs an XPath query on dblp
