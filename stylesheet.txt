@@ -5,3 +5,4 @@ box
 oval
 #Direction of Graph (LR,TB,BT,RL)
 LR
+#end of stylesheet

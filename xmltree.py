@@ -92,7 +92,6 @@ while menu != "6":
 		print(str(nresults) + " items found matching your criteria.")
 	print("Generating vizualization...\n")
 
-
 	#need unique numbers so each node will have a distinct name
 	x=0
 	y=0
@@ -100,13 +99,8 @@ while menu != "6":
 	parent = "dblp0"
 
 	f.write("digraph {\n")
-
-	#GRAPH DIRECTION
 	f.write("rankdir="+direction+"\n")
-
-
-	#f.write("node [shape=\"box\"]\n\n")
-
+	f.write("node [shape=\"box\"]\n\n")
 	f.write(dblp.tag+str(x)+" [label=\""+(dblp.tag).upper()+"\"]\n")
 	x=x+1
 
@@ -129,7 +123,6 @@ while menu != "6":
 			#oval shape for element's contents
 			f.write("node [shape=\""+leafShape+"\"]\n")
 
-			##
 			if cross == 1:
 				f.write(item2.tag+str(y)+" -> \""+item2.text+"\"\n")
 			if cross == 0:
