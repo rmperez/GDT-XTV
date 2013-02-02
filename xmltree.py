@@ -14,17 +14,21 @@ leafShape = "oval" #stuff in between <> </>
 direction = "LR"
 #add some color choices
 
-
+cross = 0
 
 menu = "0"
 print("\nWelcome to XML Tree Visualization")
-while menu != "5":  
+while menu != "6":  
 	print("Here are the options for vizualization of dblp")
 	print("1. Vizualize entire file")
 	print("2. Select an author")
 	print("3. Select a journal")
 	print("4. Select a year")
-	print("5. Exit")
+	if cross == 0:
+		print("5. Allow Cross References")
+	if cross == 1:
+		print("5. Disallow Cross References")
+	print("6. Exit")
 	menu  = raw_input("please enter choice: ")
 	if menu == "1":
 		choice = "entire file"
@@ -35,6 +39,12 @@ while menu != "5":
 	elif menu == "4":
 		choice = "year"
 	elif menu == "5":
+		if cross == 0:
+			cross = 1
+		else: 
+			cross = 0
+		continue
+	elif menu == "6":
 		print("Goodbye!")
 		exit()
 	else:
@@ -69,9 +79,6 @@ while menu != "5":
 	#open file where we will write out vizualization instructions for graphviz 
 	f = open('graph.dot','w')  
 	
-	
-
-
 #findall performs an XPath query on dblp
 	results = dblp.findall(query)
 	nresults = len(results)
@@ -111,8 +118,8 @@ while menu != "5":
 		f.write(item.tag+str(x)+" [label=\""+(item.tag).upper()+"\\n"+str(item.attrib)+"\"]\n")
 		f.write(parent+" -> {"+item.tag+str(x)+"}\n\n")
 		for item2 in item:
-			if item2.tag == choice:
-				print(item2.text)
+			#if item2.tag == choice:
+			#	print(item2.text)
 			#parent is item
 			f.write("node [shape=\""+elementShape+"\"]\n\n")
 		
@@ -122,11 +129,14 @@ while menu != "5":
 			#oval shape for element's contents
 			f.write("node [shape=\""+leafShape+"\"]\n")
 
-			#create new node for element's contents
-			f.write(item2.tag+str(y)+"x [label=\""+item2.text+"\"]\n")
-
-			#connect element node with element's contents node
-			f.write(item2.tag+str(y)+" -> "+item2.tag+str(y)+"x\n")
+			##
+			if cross == 1:
+				f.write(item2.tag+str(y)+" -> \""+item2.text+"\"\n")
+			if cross == 0:
+				#create new node for element's contents
+				f.write(item2.tag+str(y)+"x [label=\""+item2.text+"\"]\n")
+				#connect element node with element's contents node
+				f.write(item2.tag+str(y)+" -> "+item2.tag+str(y)+"x\n")
 		
 			#connect the parent item with the element node
 			f.write(item.tag+str(x)+" -> {"+item2.tag+str(y)+"}\n\n")

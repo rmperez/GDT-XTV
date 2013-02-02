@@ -1,7 +1,7 @@
 #This is the style sheet for GDT-XTV
 #Shape of nodes that contain element names
-doubleoctagon
+box
 #Shape of nodes that contain data
 oval
 #Direction of Graph (LR,TB,BT,RL)
-RL
+LR
