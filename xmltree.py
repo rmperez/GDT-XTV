@@ -9,8 +9,8 @@ tree = ET.parse(file)
 dblp = tree.getroot()
 
 #styelsheet variables
-elementShape = "box"
-leafShape = "oval"
+elementShape = "box" #stuff inside <>
+leafShape = "oval" #stuff in between <> </>
 direction = "LR"
 #add some color choices
 
@@ -96,7 +96,11 @@ while menu != "5":
 	for item in results:
 		#print item.tag, item.attrib
 		
+<<<<<<< HEAD
 		f.write("node [shape=\""+elementShape+"box\"]\n\n")
+=======
+		f.write("node [shape=\""+elementShape+"\"]\n\n")
+>>>>>>> nothing
 
 		f.write(item.tag+str(x)+" [label=\""+(item.tag).upper()+"\\n"+str(item.attrib)+"\"]\n")
 		f.write(parent+" -> {"+item.tag+str(x)+"}\n\n")
