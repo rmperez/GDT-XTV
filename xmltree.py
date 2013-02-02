@@ -17,11 +17,20 @@ direction = "LR"
 style = open(stylesheet,'r')
 trash = style.readline()
 trash = style.readline()
+
 elementShape = style.readline()
+elementShape = elementShape[:-1]
 trash = style.readline()
+
 leafShape = style.readline()
+leafShape = leafShape[:-1]
 trash = style.readline()
+
 direction = style.readline()
+direction = direction[:-1]
+
+#elementShape = "box"
+#leafShape="oval"
 
 menu = "0"
 print("\nWelcome to XML Tree Visualization")
@@ -85,7 +94,7 @@ while menu != "5":
 	f.write("digraph {\n")
 
 	#GRAPH DIRECTION
-	f.write("rankdir="+direction+"LR\n")
+	f.write("rankdir="+direction+"\n")
 
 
 	#f.write("node [shape=\"box\"]\n\n")
@@ -96,12 +105,8 @@ while menu != "5":
 	for item in results:
 		#print item.tag, item.attrib
 		
-<<<<<<< HEAD
-		f.write("node [shape=\""+elementShape+"box\"]\n\n")
-=======
-		f.write("node [shape=\""+elementShape+"\"]\n\n")
->>>>>>> nothing
-
+		f.write("node [shape=\""+elementShape+"\"]\n")
+		
 		f.write(item.tag+str(x)+" [label=\""+(item.tag).upper()+"\\n"+str(item.attrib)+"\"]\n")
 		f.write(parent+" -> {"+item.tag+str(x)+"}\n\n")
 		for item2 in item:
